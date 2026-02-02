@@ -168,3 +168,54 @@ body {
 .menu a.active {
   border-bottom: 2px solid white;
 }
+/* ===== HEADER FIXES ===== */
+
+.header {
+  background: #0b3c8a; /* royal blue */
+  width: 100%;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar layout */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+  height: 45px;
+  width: auto;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.menu a:hover,
+.menu a.active {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Prevent content hiding under sticky header */
+body {
+  padding-top: 80px;
+}
